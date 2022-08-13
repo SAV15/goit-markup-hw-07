@@ -22,22 +22,36 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="container-header">
-				<a class="logo header-logo" href="./index.html">
-					<span class="blue-text">Web</span>
+		<header class="header-page">
+			<div class="container container--header">
+				<a class="container__logo container__logo--header-logo" href="./index.html">
+					<span class="container--blue-text">Web</span>
 					Studio
 				</a>
 				<nav>
 					<ul class="pages">
-						<li><a class="header-link" href="./index.html">Студія</a></li>
-						<li><a class="header-link header-link-current" href="./portfolio.html">Портфоліо</a></li>
-						<li><a class="header-link">Контакти</a></li>
+						<li><a class="pages__header-link" href="./index.html">Студія</a></li>
+						<li><a class="pages__header-link pages__header-link--current" href="./portfolio.html">Портфоліо</a></li>
+						<li><a class="pages__header-link">Контакти</a></li>
 					</ul>
 				</nav>
-				<ul class="contacts-header">
-					<li><a href="mailto:info@devstudio.com" class="contact">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111" class="contact">+38 096 111 11 11</a></li>
+				<ul class="company-contacts">
+					<li>
+						<a href="mailto:info@devstudio.com" class="company-contacts__contact">
+							<svg class="company-contacts__icon" width="16" height="12">
+								<use href="./images/svg/icons/symbol-defs.svg#envelope"></use>
+							</svg>
+							info@devstudio.com
+						</a>
+					</li>
+					<li>
+						<a href="tel:+380961111111" class="company-contacts__contact">
+							<svg class="company-contacts__icon" width="10" height="16">
+								<use href="./images/svg/icons/symbol-defs.svg#phone"></use>
+							</svg>
+							+38 096 111 11 11
+						</a>
+					</li>
 				</ul>
 			</div>
 		</header>
@@ -243,14 +257,19 @@
 		<footer>
 			<div class="container-footer">
 				<div>
-					<a class="logo footer-logo"><span class="blue-text">Web</span>Studio</a>
+					<a class="logo footer-logo">
+						<span class="blue-text">Web</span>
+						Studio
+					</a>
 					<address>
 						<p class="company-adress">м. Київ, пр-т Лесі Українки, 26</p>
 						<ul class="contacts-footer">
-							<li class="li-contact-footer"><a href="mailto:info@example.com"
-									class="contact-footer">info@example.com</a></li>
-							<li class="li-contact-footer"><a href="tel:+380991111111" class="contact-footer">+38 099 111 11
-									11</a></li>
+							<li class="li-contact-footer">
+								<a href="mailto:info@example.com" class="contact-footer">info@example.com</a>
+							</li>
+							<li class="li-contact-footer">
+								<a href="tel:+380991111111" class="contact-footer">+38 099 111 11 11</a>
+							</li>
 						</ul>
 					</address>
 				</div>
@@ -290,9 +309,9 @@
 				<div class="subscription">
 					<h3 class="footer-title">Підпишітся на розсилку</h3>
 					<div class="subscription-option">
-						<input type="email" name="email" id="subscription-email" class="subscription-email"
-							placeholder="E-mail" />
-						<button class="subscription-button" type="submit">Підписатися
+						<input type="email" name="email" id="subscription-email" class="subscription-email" placeholder="E-mail" />
+						<button class="subscription-button" type="submit">
+							Підписатися
 							<svg width="24" height="24">
 								<use href="./images/svg/icons/symbol-defs.svg#paper-plane"></use>
 							</svg>

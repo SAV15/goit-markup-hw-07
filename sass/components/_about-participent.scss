@@ -1,0 +1,20 @@
+.about-participant {
+    padding: 30px;
+}
+
+.about-participant__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 10px;
+}
+
+.about-participant__job {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $grey-color;
+    margin-bottom: 16px;
+}

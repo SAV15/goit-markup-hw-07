@@ -1,0 +1,40 @@
+.pages {
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+
+.pages__header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    cursor: pointer;
+    color: $black-color;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pages__header-link--current {
+    color: $blue-color;
+    position: relative;
+}
+
+.pages__header-link--current::after {
+    content: "";
+    position: absolute;
+    top: 44px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: $blue-color;
+    border-radius: 2px;
+}
+
+.pages__header-link:hover,
+.pages__header-link:focus {
+    color: $blue-color;
+}

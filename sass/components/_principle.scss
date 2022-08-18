@@ -1,0 +1,28 @@
+.principle {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $grey-color;
+    width: 270px;
+}
+
+.principle__icon {
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+    background-color: $light-grey;
+    margin-bottom: 30px;
+}
+
+.principle__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.principle__description {
+    margin-top: 10px;
+}

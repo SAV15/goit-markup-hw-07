@@ -1,0 +1,40 @@
+.participents-contacts {
+    display: flex;
+}
+
+.participents-contacts>li {
+    margin-right: 10px;
+}
+
+.participents-contacts>li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.participents-contacts__link {
+    width: 44px;
+    height: 44px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: $white;
+    color: $icon-grey;
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.participents-contacts__link:hover,
+.participents-contacts__link:focus {
+    color: $white;
+    background-color: $blue-color;
+}
+
+.participents-contacts__icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    fill: currentColor;
+}

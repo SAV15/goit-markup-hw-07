@@ -787,7 +787,11 @@ footer{
     margin-bottom: 20px;
 }
 
-.contact-footer{
+.contacts-footer li:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.contacts-footer__link{
     display: inline-block;
     font-weight: 400;
     text-decoration: none;
@@ -795,11 +799,7 @@ footer{
     font-style: normal;
 }
 
-.li-contact-footer:nth-last-child(2){
-    margin-bottom: 9px;
-}
-
-.company-adress{
+.container__adress{
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -813,7 +813,7 @@ footer{
     margin-left: 70px;
 }
 
-.footer-title{
+.footer__title{
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -823,7 +823,7 @@ footer{
     margin-bottom: 20px;
 }
 
-.link-icon-join {
+.join__link {
     width: 44px;
     height: 44px;
     border: none;
@@ -839,14 +839,14 @@ footer{
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-icon-join:hover,
-.link-icon-join:focus {
+.join__link:hover,
+.join__link:focus {
     color: var(--white);
     background-color: var(--blue-color);
     cursor: pointer;
 }
 
-.icon-join {
+.join__icon {
     width: 20px;
     height: 20px;
     align-items: center;
@@ -858,11 +858,11 @@ footer{
     margin-left: 93px;
 }
 
-.subscription-option{
+.subscription__option{
     display: flex;
 }
 
-.subscription-email{
+.subscription__email{
     width: 358px;
     height: 50px;
     padding: 15px 16px;
@@ -873,7 +873,7 @@ footer{
     margin-right: 12px;
 }
 
-.subscription-email input::placeholder{
+.subscription__email input::placeholder{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
@@ -883,7 +883,11 @@ footer{
     color: rgba(255, 255, 255, 0.6);
 }
 
-.subscription-button{
+.subscription__email:focus{
+    outline: transparent;
+}
+
+.subscription__button{
     padding: 10px 28px;
     background: var(--blue-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -900,7 +904,12 @@ footer{
     justify-content: center;
 }
 
-.subscription-button svg{
+.subscription__button:hover,
+.subscription__button:focus{
+    cursor: pointer;
+}
+
+.subscription__button svg{
     fill: currentColor;
 }
 /* END OF FOOTER */

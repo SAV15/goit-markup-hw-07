@@ -1,11 +1,11 @@
 .contacts-footer li:not(:last-child) {
     margin-bottom: 9px;
-}
 
-.contacts-footer__link {
+&__link {
     display: inline-block;
     font-weight: 400;
     text-decoration: none;
-    color: var(--transparent6-white);
+    color: $transparent6-white;
     font-style: normal;
+}
 }

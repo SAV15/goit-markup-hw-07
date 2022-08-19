@@ -11,9 +11,12 @@
     border-radius: 4px;
     display: flex;
     flex-direction: column;
-}
 
-.modal__close {
+&
+
+&-form {
+    margin-bottom: 20px;
+}__close {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -33,12 +36,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__close:focus,
-.modal__close:hover {
+&__close:focus,
+&__close:hover {
     fill: $blue-color;
 }
 
-.modal__title {
+&__title {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
@@ -48,6 +51,7 @@
     color: $black-color;
 }
 
-.modal-form {
-    margin-bottom: 20px;
+& textarea {
+    resize: none;
+}
 }

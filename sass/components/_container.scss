@@ -2,14 +2,13 @@
     margin: 0 auto;
     width: 1200px;
     padding: 0 15px;
-}
 
-.container--header{
+&--header{
     display: flex;
     align-items: center;
 }
 
-.container__logo{
+&__logo{
     text-decoration: none;
     font-weight: 700;
     font-size: 26px;
@@ -18,16 +17,16 @@
     font-family: $secondary-font;
 }
 
-.container__logo--header-logo{
+&__logo--header-logo{
     color: black;
     margin-right: 93px;
 }
 
-.container--blue-text{
+&--blue-text{
     color: $blue-color;
 }
 
-.container__h1{
+&__h1{
     display: inline-block;
     width: 696px;
     font-weight: 900;
@@ -39,7 +38,7 @@
     margin: 0 auto 30px;
 }
 
-.container__button{
+&__button{
     display: block;
     margin: 0 auto;
     font-weight: 700;
@@ -54,7 +53,7 @@
     font-family: inherit;
 }
 
-.container__title {
+&__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -63,23 +62,24 @@
     margin-bottom: 50px;
 }
 
-.container--footer{
+&--footer{
     display: flex;
     align-items: center;
 }
 
-.container__logo--footer-logo{
+&__logo--footer-logo{
     color: $white;
     display: block;
     margin-bottom: 20px;
 }
 
-.container__adress {
+&__adress {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--white);
+    color: $white;
     margin-bottom: 9px;
+}
 }

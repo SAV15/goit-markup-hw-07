@@ -3,13 +3,8 @@
     display: flex;
     gap: 50px;
     margin-left: auto;
-}
 
-.contacts-header a {
-    padding: 0;
-}
-
-.company-contacts__contact {
+&__contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -24,12 +19,13 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.company-contacts__icon {
+&__icon {
     fill: currentColor;
     margin-right: 10px;
 }
 
-.company-contacts__contact:hover,
-.company-contacts__contact:focus {
+&__contact:hover,
+&__contact:focus {
     color: $blue-color;
+}
 }

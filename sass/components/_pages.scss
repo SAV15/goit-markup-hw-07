@@ -2,9 +2,8 @@
     list-style-type: none;
     display: flex;
     gap: 50px;
-}
 
-.pages__header-link {
+&__header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -18,12 +17,12 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.pages__header-link--current {
+&__header-link--current {
     color: $blue-color;
     position: relative;
 }
 
-.pages__header-link--current::after {
+&__header-link--current::after {
     content: "";
     position: absolute;
     top: 44px;
@@ -34,7 +33,8 @@
     border-radius: 2px;
 }
 
-.pages__header-link:hover,
-.pages__header-link:focus {
+&__header-link:hover,
+&__header-link:focus {
     color: $blue-color;
+}
 }

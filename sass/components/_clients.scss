@@ -2,9 +2,8 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-}
 
-.clients__link {
+&__link {
     width: 170px;
     height: 92px;
     padding: 16px 32px;
@@ -19,14 +18,15 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__icon {
+&__icon {
     width: 106px;
     height: 60px;
     fill: currentColor;
 }
 
-.clients__link:hover,
-.clients__link:focus {
+&__link:hover,
+&__link:focus {
     border: 1px solid $blue-color;
     color: $blue-color;
+}
 }

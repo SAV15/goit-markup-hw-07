@@ -1,13 +1,5 @@
-.participents-contacts {
-    display: flex;
-
-&>li {
-    margin-right: 10px;
-}
-
-&>li:nth-child(4n) {
-    margin-right: 0;
-}
+.join {
+    margin-left: 70px;
 
 &__link {
     width: 44px;
@@ -17,8 +9,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: $white;
-    color: $icon-grey;
+    background-color: $transparent1-white;
+    color: $white;
 
     transition-property: background-color, color;
     transition-duration: 250ms;
@@ -29,11 +21,13 @@
 &__link:focus {
     color: $white;
     background-color: $blue-color;
+    cursor: pointer;
 }
 
 &__icon {
     width: 20px;
     height: 20px;
+    align-items: center;
     display: inline-block;
     fill: currentColor;
 }

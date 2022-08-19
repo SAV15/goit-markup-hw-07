@@ -2,15 +2,14 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-}
 
-.what-we-do__img {
+&__img {
     width: 370px;
     height: 294px;
     position: relative;
 }
 
-.what-we-do__overlay {
+&__overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -21,7 +20,7 @@
     color: $white;
 }
 
-.what-we-do__title {
+&__title {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -30,4 +29,5 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
 }

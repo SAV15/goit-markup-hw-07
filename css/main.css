@@ -123,7 +123,7 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--white);
+  color: rgb(255, 255, 255);
   margin-bottom: 9px;
 }
 
@@ -185,11 +185,6 @@ ul {
   gap: 50px;
   margin-left: auto;
 }
-
-.contacts-header a {
-  padding: 0;
-}
-
 .company-contacts__contact {
   font-weight: 500;
   font-size: 14px;
@@ -210,14 +205,11 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .company-contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
-
-.company-contacts__contact:hover,
-.company-contacts__contact:focus {
+.company-contacts__contact:hover, .company-contacts__contact:focus {
   color: rgb(33, 150, 243);
 }
 
@@ -330,7 +322,6 @@ ul {
 .about-participant {
   padding: 30px;
 }
-
 .about-participant__name {
   font-weight: 500;
   font-size: 16px;
@@ -339,7 +330,6 @@ ul {
   color: #212121;
   margin-bottom: 10px;
 }
-
 .about-participant__job {
   font-size: 16px;
   line-height: 1.19;
@@ -408,7 +398,6 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .clients__link {
   width: 170px;
   height: 92px;
@@ -425,15 +414,12 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .clients__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;
 }
-
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid rgb(33, 150, 243);
   color: rgb(33, 150, 243);
 }
@@ -452,7 +438,6 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .backdrop--is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -661,7 +646,6 @@ ul {
   gap: 8.38px;
   margin-bottom: 30px;
 }
-
 .agreement-place > .agree {
   font-weight: 400;
   font-size: 14px;
@@ -686,7 +670,6 @@ ul {
      -moz-appearance: none;
           appearance: none;
 }
-
 .checkbox:checked + .checkbox-icon {
   background-color: rgb(33, 150, 243);
   background-image: url(../images/icon\ check.svg);
@@ -694,7 +677,6 @@ ul {
   background-origin: border-box;
   border: 2px solid rgb(33, 150, 243);
 }
-
 .checkbox-icon {
   display: inline-block;
   width: 15px;
@@ -704,7 +686,6 @@ ul {
   border-radius: 2px;
   margin-right: 7px;
 }
-
 .checkbox-icon svg {
   fill: white;
 }
@@ -916,6 +897,16 @@ footer {
   padding-bottom: 60px;
 }
 
+.footer__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
 .contacts-footer li:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -924,116 +915,170 @@ footer {
   display: inline-block;
   font-weight: 400;
   text-decoration: none;
-  color: var(--transparent6-white);
+  color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.join {
+  margin-left: 70px;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.join__link {
+  width: 44px;
+  height: 44px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgb(255, 255, 255);
+  -webkit-transition-property: background-color, color;
+  transition-property: background-color, color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.join__link:hover,
+.join__link:focus {
+  color: rgb(255, 255, 255);
+  background-color: rgb(33, 150, 243);
+  cursor: pointer;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.join__icon {
+  width: 20px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  fill: currentColor;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription {
+  margin-left: 93px;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__email {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__email input::-webkit-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__email input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__email input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__email input::-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__email input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__email:focus {
+  outline: transparent;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__button {
+  padding: 10px 28px;
+  background: rgb(33, 150, 243);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: rgb(255, 255, 255);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__button:hover,
+.subscription__button:focus {
+  cursor: pointer;
 }
 
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
-}
-
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
-}
-
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
-}
-
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
-}
-
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
-}
-
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
-}
-
-.terms {
-  color: rgb(33, 150, 243);
-  margin-left: 4px;
+.subscription__button svg {
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
